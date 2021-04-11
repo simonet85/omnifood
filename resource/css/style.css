@@ -10,12 +10,14 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 .clearfix {
   zoom: 1;
@@ -191,7 +193,9 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .hero-text-box {
@@ -200,6 +204,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .logo {
