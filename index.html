@@ -9,9 +9,7 @@
       rel="icon"
       type="image/x-icon"
     />
-    <!-- ion-icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+   
     <!-- Normalize css https://necolas.github.io/normalize.css/-->
     <link rel="stylesheet" href="./vendors/css/normalize.css" />
     <!-- css grid system http://www.responsivegridsystem.com/-->
@@ -24,19 +22,18 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="sticky">
         <div class="row">
-          <img
-            src="./resource/img/logo-white.png"
-            alt="omnifood logo"
-            class="logo"
-          />
+          <img src="./resource/img/logo-white.png" alt="omnifood logo" class="logo"/>
+          <img src="./resource/img/logo.png" alt="omnifood logo" class="black-logo"/>
+          
           <ul class="main-nav">
             <li><a href="#">Food delivery</a></li>
             <li><a href="#">How it works </a></li>
             <li><a href="#">Our cities</a></li>
             <li><a href="#">Sign up</a></li>
           </ul>
+         
         </div>
       </nav>
       <div class="hero-text-box">
@@ -49,7 +46,7 @@
       </div>
     </header>
     <!-- Features section -->
-    <section class="section-features">
+    <section class="section-features js--section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -524,6 +521,12 @@
            </div>
          </div>
        </footer>
-  
+       <!-- jquery CDN -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <!-- ion-icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resource/js/jquery-script.js"></script>
   </body>
 </html>
