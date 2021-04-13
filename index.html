@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./resource/css/style.css" />
     <!-- media queries -->
     <link rel="stylesheet" href="./resource/css/queries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Omnifood</title>
   </head>
   <body>
@@ -28,13 +30,14 @@
           <img src="./resource/img/logo-white.png" alt="omnifood logo" class="logo"/>
           <img src="./resource/img/logo.png" alt="omnifood logo" class="black-logo"/>
           
-          <ul class="main-nav">
+          <ul class="main-nav js--main-nav">
             <li><a href="#features">Food delivery</a></li>
             <li><a href="#works">How it works </a></li>
             <li><a href="#cities">Our cities</a></li>
             <li><a href="#plans">Sign up</a></li>
           </ul>
-         
+          <!-- mobile nav -->
+         <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -48,7 +51,7 @@
     </header>
     <!-- Features section -->
     <section class="section-features js--section-features" id="features">
-      <div class="row">
+      <div class="row ">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
           Hello, we’re Omnifood, your new premium food delivery service. We know
@@ -56,7 +59,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -173,7 +176,7 @@
           <img
             src="./resource/img/app-iPhone.png"
             alt="app iphone"
-            class="app-screen"
+            class="app-screen js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 steps-box">
@@ -211,8 +214,8 @@
       </div>
     </section>
     <!-- Cities section -->
-    <section class="section-cities" id="cities">
-      <div class="row">
+    <section class="section-cities " id="cities">
+      <div class="row js--wp-3">
         <h2>We're currently in these cities.</h2>
       </div>
       <div class="row">
@@ -333,7 +336,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">399$ <span>/month</span> </p>
